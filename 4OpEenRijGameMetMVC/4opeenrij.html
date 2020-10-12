@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/4opeenrij.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="item1">4 Op Een Rij</div>
+    <div class="item2" id="player1name"><h5>Player 1<br>
+        <input type="text" id="name1" name="name1" placeholder="optioneel.."><br><br>
+        <input type="submit" value="Submit" onclick="nameSet()"></h5>
+        </div>
+    <div class="item3"><section class="flex-container" id="vakjesVeld">
+        <section id="vakje0"></section>
+        <section id="vakje1"></section>
+        <section id="vakje2"></section>
+        <section id="vakje3"></section>
+        <section id="vakje4"></section>
+        <section id="vakje5"></section>
+        <section id="vakje6"></section>
+        <section id="vakje7"></section>
+        <section id="vakje8"></section>
+        <section id="vakje9"></section>
+        <section id="vakje10"></section>
+        <section id="vakje11"></section>
+        <section id="vakje12"></section>
+        <section id="vakje13"></section>
+        <section id="vakje14"></section>
+        <section id="vakje15"></section>
+        <section id="vakje16"></section>
+        <section id="vakje17"></section>
+        <section id="vakje18"></section>
+        <section id="vakje19"></section>
+        <section id="vakje20"></section>
+        <section id="vakje21"></section>
+        <section id="vakje22"></section>
+        <section id="vakje23"></section>
+        <section id="vakje24"></section>
+        <section id="vakje25"></section>
+        <section id="vakje26"></section>
+        <section id="vakje27"></section>
+        <section id="vakje28"></section>
+        <section id="vakje29"></section>
+        <section id="vakje30"></section>
+        <section id="vakje31"></section>
+        <section id="vakje32"></section>
+        <section id="vakje33"></section>
+        <section id="vakje34"></section>
+        <section id="vakje35"></section>
+        <section id="vakje36"></section>
+        <section id="vakje37"></section>
+        <section id="vakje38"></section>
+        <section id="vakje39"></section>
+        <section id="vakje40"></section>
+        <section id="vakje41"></section>
+    </section></div>
+    <div class="item4" id="player2name"><h5>Player 2<br>
+        <input type="text" id="name2" name="name2" placeholder="optioneel.."><br><br>
+        <input type="submit" value="Submit" onclick="nameSet2()"></h5>
+        </div>
+    <div class="item5" id="playerchange">Player1</div>
+</div>
+<script src="js/Component.js"></script>
+<script src="js/View.js"></script>
+<script src="js/Model.js"></script>
+<script src="js/Controller.js"></script>
+
+<script>function nameSet(){
+    let name = document.getElementById("name1").value;
+    if(name !== ""){
+        document.getElementById("player1name").innerHTML = `<h5>Player 1<br>${name}</h5>`;
+    }
+    else{
+        alert("Je moet een naam invullen!");
+    }
+}
+</script>
+
+<script>function nameSet2(){
+    let name = document.getElementById("name2").value;
+    if(name !== ""){
+        document.getElementById("player2name").innerHTML = `<h5>Player 2<br>${name}</h5>`;
+    }
+    else{
+        alert("Je moet een naam invullen!");
+    }
+}
+</script>
+
+</body>
+</html>
